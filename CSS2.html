@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .Parent {
+        height: 600px;
+        width: 1350px;
+      }
+      .child {
+        height: 300px;
+        width: 675px;
+      }
+      #box1 {
+        background-color: #59a96a;
+      }
+      #box2 {
+        background: linear-gradient(to left, #08b86c, #8b52fe);
+      }
+
+      #box3 {
+        height: 600px;
+        background-color: #636940;
+        position: absolute;
+        left: 675px;
+        top: 0px;
+      }
+      .cir {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 575px;
+        background-color: #c1ff72;
+      }
+      #box4 {
+        height: 300px;
+        width: 300px;
+        background: url(https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg);
+        background-size: cover;
+        position: absolute;
+        bottom: 50px;
+        left: 188px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Parent" id="ParentBox">
+      <div class="child" id="box1"></div>
+      <div class="child" id="box2"></div>
+      <div class="child" id="box3">
+        <div class="child" id="box4"></div>
+      </div>
+      <div class="cir" id="box5"></div>
+    </div>
+  </body>
+</html>
