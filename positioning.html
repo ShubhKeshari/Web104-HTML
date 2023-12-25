@@ -1,0 +1,70 @@
+<!-- Explain positioning in CSS
+What are meta tags?  Give example -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome kit link    -->
+    <script
+      src="https://kit.fontawesome.com/999e67b48c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* background image creation  */
+      .box,
+      .cir {
+        height: 200px;
+        width: 200px;
+        border: 1px solid green;
+        background-image: url("https://t4.ftcdn.net/jpg/05/54/52/13/360_F_554521329_ngmDQSjSrUSRnbK2xK0bkcprsinG9Xdv.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .cir {
+        border-radius: 40%;
+      }
+      h1 {
+        font-family: "Pixelify Sans", sans-serif;
+        color: #ffbc4b;
+      }
+      #user {
+        height: 200px;
+        width: 200px;
+        /* border: 2px solid red; */
+        background-image: url("https://cdn-icons-png.flaticon.com/512/17/17004.png");
+        background-size: cover;
+        /* css scan website for box shadow */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Panda dard</h1>
+    <h2>Shubham</h2>
+    <div class="box"></div>
+    <div class="cir"></div>
+    <span class="material-symbols-outlined"> star </span>
+    <span class="material-symbols-outlined"> star </span>
+    <span class="material-symbols-outlined"> star </span>
+    <span class="material-symbols-outlined"> star </span>
+    <span class="material-symbols-outlined"> star </span>
+    <!-- font awesome icon -->
+    <i class="fa-solid fa-heart"></i>
+    <br /><br /><br /><br /><br />
+    <div id="user"></div>
+  </body>
+</html>

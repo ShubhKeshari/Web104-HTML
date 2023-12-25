@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechFusion 2024</title>
+  </head>
+  <body>
+    <form>
+      <h1>TechFusion 2024</h1>
+      <fieldset>
+        <legend>Personal Details:</legend>
+        <div>
+          <label for="first">Enter your first name: </label>
+          <input
+            type="text"
+            name="name"
+            id="first"
+            required
+            placeholder="Ex: Shubham"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="last">Enter your last name: </label>
+          <input
+            type="text"
+            name="name"
+            id="last"
+            required
+            placeholder="Ex: Kesharwani"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <br />
+        <div>
+          <label for="phone">Enter your phone number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="tel"
+            required
+            pattern="[0-9]+"
+            minlength="10"
+            maxlength="10"
+            placeholder="Ex: 9712345680"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Profile Type:</legend>
+        <div>
+          <input type="radio" id="Professional" name="profile" />
+          <label for="Professional">Professional</label>
+        </div>
+
+        <div>
+          <input type="radio" id="Student" name="profile" />
+          <label for="Student">Student</label>
+        </div>
+
+        <div>
+          <input type="radio" id="Enthusiast" name="profile" />
+          <label for="Enthusiast">Enthusiast</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Areas of Interest:</legend>
+        <label for="interest-select">Choose an interest:</label>
+
+        <select name="interest" id="interest-select" required>
+          <option value="">--Please choose an option--</option>
+          <option value="web">Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="cloud">Cloud Computing</option>
+          <option value="ai">Artificial Intelligence</option>
+          <option value="cysec">Cybersecurity</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Workshops:</legend>
+
+        <div>
+          <input type="checkbox" id="works1" name="work" />
+          <label for="works1">Intro to Quantum Computing</label>
+        </div>
+        <div>
+          <input type="checkbox" id="works2" name="work" />
+          <label for="works2">Virtual Reality on the Web</label>
+        </div>
+        <div>
+          <input type="checkbox" id="works3" name="work" />
+          <label for="works3">Cybersecurity 101</label>
+        </div>
+        <div>
+          <input type="checkbox" id="works4" name="work" />
+          <label for="works4">AI in Medical Imaging</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information:</legend>
+        <div>
+          <label for="info">Write any additional information:</label>
+
+          <textarea
+            id="info"
+            name="information"
+            maxlength="300"
+            rows="5"
+            cols="33"
+          >
+          </textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred Days:</legend>
+
+        <div>
+          <input type="checkbox" id="day1" name="day" />
+          <label for="day1">Day 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="day2" name="day" />
+          <label for="day2">Day 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="day3" name="day" />
+          <label for="day3">Day 3</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Meal Preference:</legend>
+
+        <div>
+          <input type="radio" id="meal1" name="meal" />
+          <label for="meal1">Vegetarian</label>
+        </div>
+
+        <div>
+          <input type="radio" id="meal2" name="meal" />
+          <label for="meal2">Non-Vegetarian</label>
+        </div>
+
+        <div>
+          <input type="radio" id="meal3" name="meal" />
+          <label for="meal3">Vegan</label>
+        </div>
+        <div>
+          <input type="radio" id="meal4" name="meal" />
+          <label for="meal4">No Preference</label>
+        </div>
+      </fieldset>
+      <div>
+        <input type="checkbox" id="tnc" name="tnc" required />
+        <label for="tnc">I agree to the terms and conditions.</label>
+      </div>
+      <button id="final-submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
